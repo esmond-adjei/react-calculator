@@ -1,0 +1,38 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+body {
+    font-family: Nunito, Poppins;
+}
+
+/* utilities */
+.dev--border {
+    border: 2px solid green;
+}
+.dev--container {
+    background-color: gray;
+}
+
+/* Styles for Screen Component */
+
+
+/* Styles for the Number Pad */
+.keyPads {
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+    background-color: #eee;
+    padding: 1rem;
+}
+
+.numberPad {
+    width: 13rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* key button */
+.key--button:hover {
+    opacity: 0.8;
+}
