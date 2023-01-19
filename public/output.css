@@ -614,11 +614,6 @@ video {
   line-height: 2.25rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-gray-300 {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
@@ -680,6 +675,10 @@ body {
 
 .key--button:hover {
   opacity: 0.8;
+}
+
+button:active{
+  outline: 3px solid #aaa;
 }
 
 .focus\:outline-0:focus {

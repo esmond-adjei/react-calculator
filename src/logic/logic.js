@@ -20,3 +20,4 @@ const operators = ["÷","x","-","+","=",]
 const configurations = ["AC", "( )", "%"]
 
 export {numberKeys,configurations,operators}
+

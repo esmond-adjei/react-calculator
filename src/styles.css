@@ -36,3 +36,7 @@ body {
 .key--button:hover {
     opacity: 0.8;
 }
+
+button:active{
+    outline: 3px solid #aaa;
+}
