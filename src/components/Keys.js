@@ -1,4 +1,6 @@
-function Key({keyValue, styles, expression, setExpression, answer,setAnswer}) {
+import { calculateExpression } from '../logic/expressionEval';
+
+function Key({keyValue, styles, expression, setExpression, answer, setAnswer}) {
 
     const tailstyles = {
         tailKeyButton : "bg-gray-900 text-gray-300 text-center rounded-lg p-2 m-1 w-14 h-14"
@@ -17,7 +19,8 @@ function Key({keyValue, styles, expression, setExpression, answer,setAnswer}) {
                 newExpression = newExpression.slice(0,-1) 
                 break
             case "=":
-                newExpression = `Evaluate: ${expression}`
+                console.log(expression, '= ', calculateExpression(expression))
+                newExpression = `Evaluate: ${calculateExpression(expression)}`
                 // newAnswer = ''
                 break
             default:
